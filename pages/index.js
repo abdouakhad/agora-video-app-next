@@ -2,7 +2,8 @@ import { useState } from 'react'
 import { Button } from '@material-ui/core'
 import dynamic from 'next/dynamic'
 
-const VideoCall = dynamic(import('../components/call/Videocall'), { ssr: false });
+const VideoCall = dynamic(import('../components/call/VideoCall'), { ssr: false });
+// import VideoCall from '../components/call/VideoCall'
 function HomePage() {
   const [inCall, setInCall] = useState(false)
   return (
